@@ -128,10 +128,7 @@ const TravelExplore = () => {
             <div className="relative flex items-center justify-between gap-4">
               <span className="flex justify-center">
                 {[...Array(5)].map((_, index) => (
-                  <MdStarRate
-                    className="text-xl text-orange-500"
-                    key={index}
-                  />
+                  <MdStarRate className="text-xl text-orange-500" key={index} />
                 ))}
               </span>
               <span className="absolute -top-8 right-0 z-10 flex gap-2 rounded-lg bg-white px-4 py-1 shadow-sm dark:bg-darkcustom">
@@ -264,6 +261,7 @@ const TravelExplore = () => {
             infinite
             responsive={responsives}
             autoPlay={true}
+            className="z-10"
             itemClass="px-2 pb-4"
           >
             {dataTravels.map((travel, index) => (

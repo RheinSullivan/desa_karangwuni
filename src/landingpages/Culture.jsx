@@ -68,6 +68,7 @@ const Culture = () => {
               responsive={responsives}
               autoPlay={true}
               itemClass="pb-6 px-2"
+              className="z-10"
             >
               {dataOffers.map((offer, index) => (
                 <div

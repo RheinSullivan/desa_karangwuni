@@ -124,7 +124,7 @@ const Travel = () => {
                 responsive={responsives}
                 afterChange={handleSlideChange}
                 itemClass="pb-6 px-2"
-                className="z10"
+                className="z-10"
               >
                 {dataTravels.map((item, index) => (
                   <Explores

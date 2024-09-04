@@ -19,7 +19,7 @@ function App() {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 8000);
+    }, 2000);
     // AOS
     AOS.init({
       once: true,
@@ -43,12 +43,7 @@ function App() {
           />
           <h2 className="mt-16 text-lg font-bold text-black dark:text-white">
             <TypeAnimation
-              sequence={[
-                "Wilujeng Sumping...",
-                1000,
-                "Selamat Datang...",
-                1000,
-              ]}
+              sequence={["Selamat Datang...", 1000]}
               speed={1}
               wrapper="span"
               repeat={Infinity}
