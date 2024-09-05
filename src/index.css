@@ -78,7 +78,6 @@
   .text-gradient {
     @apply bg-gradient-to-r from-[#0284c7] to-[#16a34a] bg-clip-text font-bold text-transparent hover:from-[#017a2e] hover:to-[#01496e];
   }
-
   .section-gallery {
     @apply mt-16 flex items-center text-lg leading-8;
   }

@@ -11,6 +11,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 // React Tyoe Animation
 import { TypeAnimation } from "react-type-animation";
+import ArticleSetu from "./backend/ArticleSetu";
 
 function App() {
   // Loading
@@ -55,6 +56,8 @@ function App() {
           <Routes>
             {/* Path Landing Page */}
             <Route path="/" exact element={<LandingPage />} />
+            {/* Article Setu Sedong */}
+            <Route path="/wisata/setu-sedong" element={<ArticleSetu />} />
           </Routes>
         </div>
       )}

@@ -23,11 +23,12 @@ import {
   FcMoneyTransfer,
 } from "react-icons/fc";
 import { MdKeyboardDoubleArrowRight, MdStarRate } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 const TravelExplore = () => {
   const dataTravels = [
     {
-      id: "danau",
+      id: "setu-sedong",
       image: Danau,
       name: "Danau Ngopi",
       title: "TERSEDIA",
@@ -167,9 +168,15 @@ const TravelExplore = () => {
                   {available}
                 </span>
               </div>
-              <a href="#" className="flex items-center gap-2 text-sm">
-                Jelajahi, bro! <MdKeyboardDoubleArrowRight />
-              </a>
+              <Link
+                to="/wisata/setu-sedong"
+                className="flex items-center gap-2 text-sm"
+              >
+                Jelajahi, bro!{" "}
+                <span className="mt-1 text-xl">
+                  <MdKeyboardDoubleArrowRight />
+                </span>
+              </Link>
             </div>
           </div>
         </div>
@@ -251,7 +258,7 @@ const TravelExplore = () => {
               Uchiha, Konohagakure
             </h6>
           </div>
-          <h3 className="py-4 pb-20 text-center text-2xl font-bold text-black dark:text-white lg:w-4/5 lg:text-start lg:text-3xl">
+          <h3 className="mx-3 py-4 pb-20 text-center text-2xl font-bold text-black dark:text-white lg:mx-0 lg:w-4/5 lg:text-start lg:text-3xl">
             Selamat datang di blok Uchiha, desa Konohagakure. Berhati-hatilah
             dengan Sharingan!
           </h3>

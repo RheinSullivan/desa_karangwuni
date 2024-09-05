@@ -19,7 +19,7 @@ const categories = [
 ];
 
 const Information = () => {
-  const Section = ({ title, text, children, image, reverse }) => {
+  const Section = ({ title, text, children, image, reverse, desc }) => {
     return (
       <div
         className="mx-auto mb-32 mt-16 max-w-[1320px] px-3"
@@ -36,11 +36,7 @@ const Information = () => {
             <h3 className="pb-8 text-2xl font-bold leading-tight lg:text-4xl">
               {text}
             </h3>
-            <p>
-              sit amet consectetur adipisicing elit. Molestiae nesciunt error
-              ipsum excepturi distinctio possimus animi, ea aut itaque nemo et
-              tenetur incidunt voluptatibus neque minima facilis quibusdam!
-            </p>
+            <p>{desc}</p>
             <div className="mt-6">{children}</div>
           </div>
           <div className="flex justify-center lg:w-1/2 lg:justify-end">
@@ -90,8 +86,9 @@ const Information = () => {
     <div className="my-16">
       <Section
         image={Pedesaan}
-        text="Desa kami adalah yang paling menyenangkan tentang perjalanan dan petualangan"
+        text="Desa kami adalah desa yang paling menyenangkan, dengan perjalanan dan petualangan seru"
         title="Selamat datang di Desa Karangwuni"
+        desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis eos quas quis, odio ratione distinctio suscipit dolore ipsa nesciunt, autem est molestiae sed nam aperiam quisquam nihil sit veniam ipsum."
       >
         <div className="mb-16 mt-10 grid justify-start gap-y-5 text-white dark:text-black lg:mx-16 lg:mb-0 lg:grid-cols-2 lg:justify-normal">
           {categories.map((category) => (
@@ -108,6 +105,7 @@ const Information = () => {
         image={Pesawahan}
         text="Masih banyak kesempatan untuk menikmati keindahan alam dan wisata disini"
         title="Selamat menikmati keindahan alam desa kami"
+        desc="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque suscipit sapiente excepturi facilis labore sint? Corporis perspiciatis laboriosam a deserunt fuga voluptates. Atque voluptate, ea quis reiciendis dolore recusandae, voluptatem animi soluta natus id, dolorum dolor aperiam enim maxime perspiciatis sapiente et numquam laudantium beatae deserunt nostrum. Animi dicta impedit reiciendis tenetur maxime. Tempore ipsam aliquam consequatur velit expedita. Odit natus obcaecati nesciunt deserunt odio fugiat rerum, autem suscipit error sequi nobis quam id consectetur magnam quos aut. Obcaecati, maiores facilis corporis pariatur corrupti sunt. Aliquid, modi vitae rerum nulla quis aperiam iusto natus dolore provident eos ipsam molestiae voluptas!"
         reverse
       >
         <div className="my-12 flex items-center justify-center">
